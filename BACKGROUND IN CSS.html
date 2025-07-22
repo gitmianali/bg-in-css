@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BG IN CSS</title>
+    <link rel="stylesheet" href="BACKGROUND IN CSS.css" />
+  </head>
+  <body>
+    <a href="#background-color"></a>
+
+    <div class="h1">
+      <h1>background in CSS</h1>
+    </div>
+    <div class="p">
+      <p>
+        In these chapters, ALI will learn about the following CSS background
+        properties
+      </p>
+    </div>
+    <div class="topics">
+      <ul class="list">
+        <a href="#background-color"><li>background-color</li></a>
+        <a href="#background-image"><li>background-image</li></a>
+        <a href="#background-repeat"><li>background-repeat</li></a>
+        <a href="#background-attachment"><li>background-attachment</li></a>
+        <a href="#background-position"><li>background-position</li></a>
+        <a href="#background"><li>background (short)</li></a>
+        <a href="#table"><li>table of tags</li></a>
+      </ul>
+    </div>
+    <div class="background-color">
+      <h2 id="background-color">background-color</h2>
+      <p>
+        The background-color property specifies the background color of an
+        element
+      </p>
+      <h3>example</h3>
+      <span class="red">this is red</span>
+    </div>
+    <div class="background-image">
+      <h2 id="background-image">background-image</h2>
+      <p>
+        The background-image property specifies an image to use as the
+        background of an element
+      </p>
+      <p>By default, the image is repeated so it covers the entire element</p>
+      <h3>example</h3>
+      <p class="code">body { background-image: url("paper.gif"); }</p>
+      <p>
+        The background image can also be set for specific elements, like the
+        &lt;p&gt; element
+      </p>
+    </div>
+    <div class="background-repeat">
+      <h2 id="background-repeat">background-repeat</h2>
+      <p>
+        By default, the background-image property repeats an image both
+        horizontally and vertically
+      </p>
+      <p>
+        Some images should be repeated only horizontally or vertically, or they
+        will look strange, like this
+      </p>
+      <h3>example</h3>
+      <p class="code">body { background-image: url("gradient_bg.png"); }</p>
+      <p>If the image above is repeated only horizontally</p>
+      <p class="code">
+        (background-repeat: repeat-x;), the background will look better
+      </p>
+      <p class="code">
+        body { background-image: url("gradient_bg.png"); background-repeat:
+        repeat-x; }
+      </p>
+      <p>Showing the background image only once is also specified by the</p>
+      <p class="code">
+        background-repeat property: {background-repeat: no-repeat;}
+      </p>
+    </div>
+    <div class="background-position">
+      <h2 id="background-position">background-position</h2>
+      <p>
+        The background-position property is used to specify the position of the
+        background image
+      </p>
+      <h3>example</h3>
+      <p>Position the background image in the top-right corner</p>
+      <p class="code">
+        body { background-image: url("img_tree.png"); background-repeat:
+        no-repeat; background-position: right top; }
+      </p>
+    </div>
+    <div class="background-attachment">
+      <h2 id="background-attachment">background-attachment</h2>
+      <p>
+        The background-attachment property specifies whether the background
+        image should scroll or be fixed (will not scroll with the rest of the
+        page)
+      </p>
+      <h3>example 1 fixed background</h3>
+      <p class="code">
+        body { background-image: url("img_tree.png"); background-repeat:
+        no-repeat; background-position: right top; background-attachment: fixed;
+        }
+      </p>
+      <h3>example 2 scrollable background</h3>
+      <p>
+        Specify that the background image should scroll with the rest of the
+        page
+      </p>
+      <p class="code">
+        body { background-image: url("img_tree.png"); background-repeat:
+        no-repeat; background-position: right top; background-attachment:
+        scroll; }
+      </p>
+    </div>
+    <div class="background(shorthand property)">
+      <h2 id="background">background (short)</h2>
+      <p>You can use the shorthand property background for</p>
+      <h3>example</h3>
+      <p>
+        Use the shorthand property to set the background properties in one
+        declaration
+      </p>
+      <p class="code">
+        body { background: #color url("img_tree.png") no-repeat right top; }
+      </p>
+    </div>
+    <div>
+      <h2 id="table">table</h2>
+      <table class="table">
+        <tr>
+          <th>background</th>
+          <td>Sets all the background properties in one declaration</td>
+        </tr>
+        <tr>
+          <th>background-attachment</th>
+          <td>
+            Sets whether a background image is fixed or scrolls with the rest of
+            the page
+          </td>
+        </tr>
+        <tr>
+          <th>background-clip</th>
+          <td>Specifies the painting area of the background</td>
+        </tr>
+
+        <tr>
+          <th>background-color</th>
+          <td>Sets the background color of an element</td>
+        </tr>
+
+        <tr>
+          <th>background-image</th>
+          <td>Sets the background image for an element</td>
+        </tr>
+
+        <tr>
+          <th>background-origin</th>
+          <td>Specifies where the background image(s) is/are positioned</td>
+        </tr>
+
+        <tr>
+          <th>background-position</th>
+          <td>Sets the starting position of a background image</td>
+        </tr>
+
+        <tr>
+          <th>background-repeat</th>
+          <td>Sets how a background image will be repeated</td>
+        </tr>
+
+        <tr>
+          <th>background-size</th>
+          <td>Specifies the size of the background image(s)</td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>
